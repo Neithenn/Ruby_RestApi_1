@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :users
       post 'checkuser' => 'users#show'
       post 'newnotes' => 'notes#create'
+      post 'updatenotes' => 'notes#update'
     end
   end  
 end 
